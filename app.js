@@ -6,7 +6,7 @@ const PORT = 3000;
 
 
 app.get('/', (req, res) => {
-  res.end(`
+  res.send(`
     <!DOCTYPE html>
       <html lang="en">
       <head>
@@ -36,7 +36,7 @@ app.get('/:specialty', (req, res) => {
         <a href="/">Home</a>`);
       }
       const listItems = filtered.map(user => `<li>${user.name}, ${user.age} años</li>`).join('');
-        res.end(`
+        res.send(`
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -46,7 +46,7 @@ app.get('/:specialty', (req, res) => {
         
       </head>
       <body>
-          <h1>Speciality: ${specialty}</h1>
+          <h1>Specialty: ${specialty}</h1>
           <ul class="menu">
             <li><a href="/">Home</a></li>
             <li><a href="/developers">Developers</a></li>
