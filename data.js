@@ -34,9 +34,3 @@ const usersData = [
   ];
 
   module.exports = usersData;
-
- /*<a href="/">Home</a>
-  <a href="/marketing">Marketing</a>
-  <a href="/developers">Developers</a>
-  <a href="/ventas">Ventas</a>
-  <a href="/qas">QAs</a>*/
